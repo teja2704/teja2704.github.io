@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teja's Blog</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
@@ -14,12 +14,9 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            Hello! I'm <strong>Teja</strong>, an AI/ML enthusiast and developer. I enjoy working on exciting projects and sharing my knowledge with others.
-        </p>
+        <p>Hello! I'm Teja, an AI/ML enthusiast and developer. I enjoy working on exciting projects and sharing my knowledge with others.</p>
     </section>
 
-    <!-- Featured Projects Section -->
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="project-container">
@@ -29,13 +26,13 @@
                 <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener">View Project</a>
             </div>
             <div class="project">
-                <h3>😊 Facial Emotion Recognition</h3>
-                <p>Detects emotions from real-time video feeds.</p>
+                <h3>✏️ Hand-Written</h3>
+                <p>Recognizes hand-written text using deep learning models.</p>
                 <a href="https://github.com/teja2704/Hand-Written" target="_blank" rel="noopener">View Project</a>
             </div>
             <div class="project">
-                <h3>🛡️ Fraud Detection System</h3>
-                <p>AI-powered fraud detection using machine learning.</p>
+                <h3>✋ Hand-Gesture</h3>
+                <p>Hand gesture recognition using computer vision.</p>
                 <a href="https://github.com/teja2704/Hand-Gesture" target="_blank" rel="noopener">View Project</a>
             </div>
             <div class="project">
@@ -45,41 +42,18 @@
             </div>
         </div>
     </section>
-    
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>Latest Blog Posts</h2>
-        <div class="blog-container">
-            <div class="blog-post">
-                <h3>📚 Getting Started with Machine Learning</h3>
-                <p>Learn the basics of ML and build your first model.</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="blog-post">
-                <h3>😀 Building a Facial Emotion Detector</h3>
-                <p>Step-by-step guide to creating an emotion detector.</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="blog-post">
-                <h3>🎼 How I Built a Music Recommender</h3>
-                <p>Integrating AI to suggest music based on emotions.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Form Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="#" method="post">
+        <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="text" id="name" name="name" required>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <input type="email" id="email" name="email" required>
             
             <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="4" required></textarea>
             
             <button type="submit">Send Message</button>
         </form>
