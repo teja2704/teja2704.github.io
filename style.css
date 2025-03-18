@@ -1,111 +1,100 @@
-/* General Styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
+/* Header Styles */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4a90e2;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-p {
-    margin-top: 5px;
-    font-size: 1.1em;
-}
-
-/* Section Styling */
+/* Section Styles */
 section {
-    width: 80%;
     margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
 }
 
-/* Projects and Blog Styles */
-.projects-container, .blog-posts {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+/* Project and Blog Containers */
+.project-container,
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-.project-card, .post {
+/* Project and Blog Cards */
+.project,
+.blog-post {
     background-color: #fff;
-    width: 30%;
-    padding: 15px;
-    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.project-card h3, .post h3 {
-    margin-top: 0;
+.project h3,
+.blog-post h3 {
     color: #333;
 }
 
-.project-card a, .post a {
-    color: #4CAF50;
+.project a,
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4a90e2;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
-.project-card a:hover, .post a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Form Styling */
+/* Contact Form Styles */
 form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
+    display: block;
     margin-top: 10px;
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
 }
 
 button {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4a90e2;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-/* Footer Styling */
+/* Footer Styles */
 footer {
-    text-align: center;
-    padding: 15px;
     background-color: #333;
-    color: white;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
 }
