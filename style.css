@@ -1,88 +1,133 @@
+/* Style for the bold and vibrant blog */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    padding: 20px;
     text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-h1 {
-    margin: 0;
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ff4b2b;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffdd57;
 }
 
 section {
+    max-width: 1000px;
+    margin: 40px auto;
     padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.8);
 }
 
 h2 {
-    color: #333;
+    color: #ffdd57;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.project-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.project-container, .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.project {
-    padding: 15px;
-    border: 1px solid #ccc;
+.project, .post {
+    background-color: #292929;
+    padding: 20px;
+    margin: 10px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+.project:hover, .post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.9);
+}
+
+.project h3, .post h3 {
+    color: #ff416c;
+}
+
+.project p, .post p {
+    color: #f5f5f5;
+}
+
+.project a, .post a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4b2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project a:hover, .post a:hover {
+    background-color: #ffdd57;
+    color: #1f1f1f;
+}
+
+.contact-form {
     text-align: center;
 }
 
-.project a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input, textarea, button {
-    margin-top: 5px;
+input, textarea {
+    width: 80%;
     padding: 10px;
-    font-size: 16px;
-    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: #292929;
+    color: white;
 }
 
 button {
-    background-color: #4CAF50;
+    padding: 12px 25px;
+    background-color: #ff4b2b;
     color: white;
     border: none;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 15px;
-    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #ffdd57;
+    color: #1f1f1f;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
 }
