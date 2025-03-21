@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Teja's Personal Blog - Showcasing AI/ML Projects and Insights">
+    <meta name="description" content="Teja's AI/ML Portfolio - Showcasing Projects and Insights">
     <title>Teja's AI/ML Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Teja</div>
@@ -36,8 +37,11 @@
             <h2>About Me</h2>
         </div>
         <div class="content">
-            <img src="assets/profile.jpg" alt="Teja's Photo" class="profile-img">
-            <p>Hi! I'm Teja, a passionate AI/ML Engineer focused on creating intelligent systems that make a difference. From emotion detection to music generation, I love working on innovative solutions!</p>
+            <img src="assets/teja-profile.jpg" alt="Teja's Photo" class="profile-img">
+            <div class="profile-description">
+                <p>Hi! I'm Teja, a passionate AI/ML Engineer focused on creating intelligent systems that make a difference. From emotion detection to music generation, I love working on innovative solutions!</p>
+                <p>Currently, I am working on projects like facial emotion recognition and a music recommendation system that uses AI to recommend songs based on real-time facial expressions.</p>
+            </div>
         </div>
     </section>
 
@@ -50,17 +54,17 @@
             <div class="project-item">
                 <h3>🎵 Music Recommendation System</h3>
                 <p>Uses facial emotion recognition to recommend music in real-time.</p>
-                <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener" class="btn">View Project</a>
+                <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
             </div>
             <div class="project-item">
                 <h3>🤖 Facial Emotion Recognition</h3>
                 <p>Detects emotions in real-time from video feeds.</p>
-                <a href="https://github.com/teja2704/Facial-Emotion-Recognition" target="_blank" rel="noopener" class="btn">View Project</a>
+                <a href="https://github.com/teja2704/Facial-Emotion-Recognition" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
             </div>
             <div class="project-item">
                 <h3>📝 Resume Screening API</h3>
                 <p>AI-powered API for screening resumes and matching candidates to job roles.</p>
-                <a href="https://github.com/teja2704/resume-screening" target="_blank" rel="noopener" class="btn">View Project</a>
+                <a href="https://github.com/teja2704/resume-screening" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
             </div>
         </div>
     </section>
@@ -77,30 +81,21 @@
                 <a href="#" class="btn">Read More</a>
             </div>
             <div class="blog-post">
-                <h3>🚀 Building Emotion Detection Systems</h3>
-                <p>A step-by-step guide to building a facial emotion detector.</p>
+                <h3>🎵 Music Generation with AI</h3>
+                <p>How I built a Music Generator using AI and neural networks.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="section-title">
-            <h2>Contact Me</h2>
+    <!-- Popup Modal -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Welcome to my Portfolio!</h3>
+            <p>Click anywhere to close this popup.</p>
+            <button class="close-popup" onclick="closePopup()">Close</button>
         </div>
-        <div class="contact-info">
-            <p>Feel free to reach out via:</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/pathipati-teja-670a0b266/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
-                <a href="mailto:pattipatiteja@gmail.com" class="btn">Email</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Teja. All rights reserved.</p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
