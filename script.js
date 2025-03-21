@@ -1,8 +1,4 @@
-// Popup Functionality
+// Trigger Screen Pop-up Effect on Load
 window.onload = () => {
-    document.getElementById('popup').style.display = 'flex';
+    document.body.style.animation = 'popUpScreen 1s ease-out';
 };
-
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}

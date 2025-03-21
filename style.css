@@ -6,6 +6,20 @@ body {
     background-color: #f8f9fa;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    animation: popUpScreen 1s ease-out;
+}
+
+/* Animation for Screen Pop */
+@keyframes popUpScreen {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Navbar */
