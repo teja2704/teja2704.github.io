@@ -5,109 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teja's Personal Blog - Showcasing AI/ML Projects and Insights">
-    <title>PATHIPATI TEJA | AI & ML Projects</title>
+    <title>Teja's AI/ML Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Teja</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="section">
         <div class="hero-content">
-            <h1>👋 Welcome to <span class="highlight">My Portfolio</span></h1>
-            <p>Exploring AI, ML, and Beyond! 🚀</p>
-            <a href="#projects" class="btn">Explore Projects</a>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore AI/ML, Music, and More!</p>
+            <a href="#projects" class="btn">See Projects</a>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="section hidden">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="assets/profile.jpg" alt="Teja's Photo" class="profile-pic">
-            <div class="about-content">
-                <p>👋 Hi, I'm <strong>Teja Pathipati</strong>, an aspiring AI/ML Engineer with a passion for building intelligent solutions. I enjoy combining creativity with technology to push the boundaries of artificial intelligence.</p>
-                <ul>
-                    <li>⚡ Machine Learning & Deep Learning</li>
-                    <li>🎯 Computer Vision & Image Processing</li>
-                    <li>🎵 Music Generation and Recommendation Systems</li>
-                    <li>📊 Fraud Detection & Data Analysis</li>
-                </ul>
-                <p>🔗 Connect with me on
-                    <a href="https://www.linkedin.com/in/pathipati-teja-670a0b266/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    or explore my work on
-                    <a href="https://github.com/teja2704" target="_blank" rel="noopener noreferrer">GitHub</a>!
-                </p>
-            </div>
+    <section id="about" class="section">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <img src="assets/profile.jpg" alt="Teja's Photo" class="profile-img">
+            <p>Hi! I'm Teja, a passionate AI/ML Engineer focused on creating intelligent systems that make a difference. From emotion detection to music generation, I love working on innovative solutions!</p>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section hidden">
-        <h2>🎯 Featured Projects</h2>
-        <div class="project-container">
-            <div class="project">
-                <h3>🎧 Music Recommendation System</h3>
-                <p>Built using facial emotions and real-time detection.</p>
-                <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener noreferrer">View Project</a>
+    <section id="projects" class="section">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>🎵 Music Recommendation System</h3>
+                <p>Uses facial emotion recognition to recommend music in real-time.</p>
+                <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener" class="btn">View Project</a>
             </div>
-            <div class="project">
-                <h3>😊 Facial Emotion Recognition</h3>
-                <p>Detects emotions from real-time video feeds.</p>
-                <a href="https://github.com/teja2704/Hand-Written" target="_blank" rel="noopener noreferrer">View Project</a>
+            <div class="project-item">
+                <h3>🤖 Facial Emotion Recognition</h3>
+                <p>Detects emotions in real-time from video feeds.</p>
+                <a href="https://github.com/teja2704/Facial-Emotion-Recognition" target="_blank" rel="noopener" class="btn">View Project</a>
             </div>
-            <div class="project">
-                <h3>✋ Hand Gesture Recognition</h3>
-                <p>Recognizes hand gestures using AI models.</p>
-                <a href="https://github.com/teja2704/Hand-Gesture" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project">
-                <h3>📄 Resume Screening API</h3>
-                <p>AI-powered API to screen resumes and match candidates.</p>
-                <a href="https://github.com/teja2704/resume-screening" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="project">
-                <h3>🎵 Music Generation</h3>
-                <p>Generates music using AI models trained on various genres.</p>
-                <a href="https://github.com/teja2704/music-generation" target="_blank" rel="noopener noreferrer">View Project</a>
+            <div class="project-item">
+                <h3>📝 Resume Screening API</h3>
+                <p>AI-powered API for screening resumes and matching candidates to job roles.</p>
+                <a href="https://github.com/teja2704/resume-screening" target="_blank" rel="noopener" class="btn">View Project</a>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="section hidden">
-        <h2>📝 Latest Blog Posts</h2>
+    <section id="blog" class="section">
+        <div class="section-title">
+            <h2>Latest Blog Posts</h2>
+        </div>
         <div class="blog-posts">
-            <div class="post">
-                <h3>📚 Getting Started with Machine Learning</h3>
-                <p>Learn the basics of ML and build your first model.</p>
+            <div class="blog-post">
+                <h3>💡 Getting Started with ML</h3>
+                <p>Learn the basics of Machine Learning and build your first model.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
-            <div class="post">
-                <h3>😊 Building a Facial Emotion Detector</h3>
-                <p>Step-by-step guide to creating an emotion detector.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="post">
-                <h3>🎧 How I Built a Music Recommender</h3>
-                <p>Integrating AI to suggest music based on emotions.</p>
+            <div class="blog-post">
+                <h3>🚀 Building Emotion Detection Systems</h3>
+                <p>A step-by-step guide to building a facial emotion detector.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section hidden">
-        <h2>🔗 Connect With Me</h2>
-        <div class="social-container">
-            <a href="https://www.linkedin.com/in/pathipati-teja-670a0b266/" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
-            <a href="https://github.com/teja2704" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
-            <a href="mailto:pattipatiteja@gmail.com" class="btn">Email Me</a>
+    <section id="contact" class="section">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-info">
+            <p>Feel free to reach out via:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pathipati-teja-670a0b266/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+                <a href="mailto:pattipatiteja@gmail.com" class="btn">Email</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2025 Pathipati Teja. All rights reserved.</p>
+        <p>© 2025 Teja. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
