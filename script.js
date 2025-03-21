@@ -1,11 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const heroText = document.querySelector(".hero-content h1");
-    heroText.style.opacity = "0";
-    heroText.style.transform = "translateY(-20px)";
-
-    setTimeout(() => {
-        heroText.style.transition = "opacity 1s ease-out, transform 1s ease-out";
-        heroText.style.opacity = "1";
-        heroText.style.transform = "translateY(0)";
-    }, 500);
+// Smooth Scroll with Offset
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+            top: target.offsetTop - 50,
+            behavior: 'smooth'
+        });
+    });
 });
+
+// Slide and Fade Animations on Scroll
+const sections = document.querySelectorAll('.section');
+
+const revealSection = () => {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (sectionTop < windowHeight - 100) {
+            section.classList.add('visible');
+        } else {
+            section.classList.remove('visible');
+        }
+    });
+};
+
+window.addEventListener('scroll', revealSection);
+window.addEventListener('load', revealSection);
