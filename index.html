@@ -1,103 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Teja's AI/ML Portfolio - Showcasing Projects and Insights">
-    <title>Teja's AI/ML Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Teja's AI/ML Portfolio - Innovate with Intelligence">
+    <title>Teja | AI/ML Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header>
+        <div class="brand">TEJA</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Teja</div>
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="section">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore AI/ML, Music, and More!</p>
-            <a href="#projects" class="btn">See Projects</a>
+    <!-- Main Section -->
+    <main>
+        <div class="intro">
+            <h1>Hey, I'm Teja</h1>
+            <p>AI/ML Engineer | Innovator | Music Enthusiast</p>
+            <a href="#projects" class="cta">Explore My Work</a>
         </div>
-    </section>
+    </main>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
-        <div class="section-title">
-            <h2>About Me</h2>
-        </div>
-        <div class="content">
-            <img src="assets/teja-profile.jpg" alt="Teja's Photo" class="profile-img">
-            <div class="profile-description">
-                <p>Hi! I'm Teja, a passionate AI/ML Engineer focused on creating intelligent systems that make a difference. From emotion detection to music generation, I love working on innovative solutions!</p>
-                <p>Currently, I am working on projects like facial emotion recognition and a music recommendation system that uses AI to recommend songs based on real-time facial expressions.</p>
-            </div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>Who Am I?</h2>
+        <div class="about-content">
+            <p>I’m Teja, an AI/ML enthusiast building intelligent systems. I specialize in real-time emotion recognition and music generation using cutting-edge tech.</p>
+            <p>Currently exploring: AI-driven music recommendations based on facial expressions.</p>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="section-title">
-            <h2>My Projects</h2>
-        </div>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>🎵 Music Recommendation System</h3>
-                <p>Uses facial emotion recognition to recommend music in real-time.</p>
-                <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Music Recommendation System</h3>
+                <p>Recommends songs by analyzing facial emotions in real-time.</p>
+                <a href="https://github.com/teja2704/music-recommendation-system" target="_blank" rel="noopener noreferrer">Check It Out</a>
             </div>
-            <div class="project-item">
-                <h3>🤖 Facial Emotion Recognition</h3>
-                <p>Detects emotions in real-time from video feeds.</p>
-                <a href="https://github.com/teja2704/Facial-Emotion-Recognition" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
+            <div class="project-card">
+                <h3>Facial Emotion Recognition</h3>
+                <p>Real-time emotion detection from video feeds using AI.</p>
+                <a href="https://github.com/teja2704/Facial-Emotion-Recognition" target="_blank" rel="noopener noreferrer">Check It Out</a>
             </div>
-            <div class="project-item">
-                <h3>📝 Resume Screening API</h3>
-                <p>AI-powered API for screening resumes and matching candidates to job roles.</p>
-                <a href="https://github.com/teja2704/resume-screening" target="_blank" rel="noopener noreferrer" class="btn">View Project</a>
+            <div class="project-card">
+                <h3>Resume Screening API</h3>
+                <p>AI-powered tool to match resumes with job roles.</p>
+                <a href="https://github.com/teja2704/resume-screening" target="_blank" rel="noopener noreferrer">Check It Out</a>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="section-title">
-            <h2>Latest Blog Posts</h2>
-        </div>
-        <div class="blog-posts">
-            <div class="blog-post">
-                <h3>💡 Getting Started with ML</h3>
-                <p>Learn the basics of Machine Learning and build your first model.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="blog-post">
-                <h3>🎵 Music Generation with AI</h3>
-                <p>How I built a Music Generator using AI and neural networks.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Want to collaborate or say hi? Reach me at <a href="mailto:teja@example.com">teja@example.com</a></p>
     </section>
 
-    <!-- Popup Modal (For Screen Pop Animation) -->
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <h3>Welcome to my Portfolio!</h3>
-            <p>Click anywhere to close this popup.</p>
-            <button class="close-popup" onclick="closePopup()">Close</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
